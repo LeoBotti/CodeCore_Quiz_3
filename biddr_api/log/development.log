@@ -1,0 +1,1750 @@
+Started GET "/" for 127.0.0.1 at 2018-11-27 09:59:20 -0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "biddr_api_development" does not exist
+):
+  
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:688:in `rescue in connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:683:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (2472.5ms)[0m  [1m[35mCREATE DATABASE "biddr_api_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (641.9ms)[0m  [1m[35mCREATE DATABASE "biddr_api_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-11-27 10:01:09 -0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 55ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (402.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (81.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (11.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20181127180146)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (98.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "username" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181127180146_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181127180146"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-27 18:03:38.799430"], ["updated_at", "2018-11-27 18:03:38.799430"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateAuctions (20181127180508)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateAuctions (20181127180508)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (97.2ms)[0m  [1m[35mCREATE TABLE "auctions" ("id" bigserial primary key, "title" character varying, "details" text, "ends_on" timestamp, "reserve_price" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181127180508_create_auctions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181127180508"]]
+  ↳ bin/rails:9
+  [1m[35m (15.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateBids (20181127181106)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (64.9ms)[0m  [1m[35mCREATE TABLE "bids" ("id" bigserial primary key, "price" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181127181106_create_bids.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181127181106"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (13.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mAuction Load (21.4ms)[0m  [1m[34mSELECT  "auctions".* FROM "auctions" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mBid Load (25.8ms)[0m  [1m[34mSELECT  "bids".* FROM "bids" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (22.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (1.4ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (1.0ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mBid Destroy (1.0ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-11-27 11:33:25 -0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/user/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.7ms)
+Completed 200 OK in 197ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (0.7ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mBid Destroy (0.6ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (0.9ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (0.6ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mBid Destroy (0.6ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (0.8ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mBid Destroy (0.6ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:21
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mAuction Load (0.7ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions"[0m
+  [1m[36mBid Load (0.7ms)[0m  [1m[34mSELECT "bids".* FROM "bids"[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (1.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (0.9ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mBid Destroy (0.6ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (58.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "auctions"[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "bids"[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (1.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (0.6ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mBid Destroy (0.9ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Knower of Nothing"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (23.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Jon"], ["last_name", "Snow"], ["username", "Knower of Nothing"], ["email", "js@winterfell.gov"], ["password_digest", "$2a$10$jKH2udRFjk50/kywxkhiAe1AJEwAo7CqqFmSf6/pzzyvs4JAmBFj6"], ["created_at", "2018-11-27 19:55:50.661030"], ["updated_at", "2018-11-27 19:55:50.661030"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (18.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (41.3ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (0.7ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mBid Destroy (0.9ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Knower of Nothing"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Jon"], ["last_name", "Snow"], ["username", "Knower of Nothing"], ["email", "js@winterfell.gov"], ["password_digest", "$2a$10$KecT9i222XGNhqpU9rwjAO3Y2.uEDx1T8vPfEFJD5tuonaI/RJRiG"], ["created_at", "2018-11-27 19:56:23.411957"], ["updated_at", "2018-11-27 19:56:23.411957"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "auctions"[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "bids"[0m
+  ↳ db/seeds.rb:26
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (43.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (41.3ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (0.8ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mBid Destroy (0.6ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Knower of Nothing"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Jon"], ["last_name", "Snow"], ["username", "Knower of Nothing"], ["email", "js@winterfell.gov"], ["password_digest", "$2a$10$Mi2Q423pCXdGSVmmUjY72e8v.uzQ5hYwykUwoUYZ4YYzdwymHdbK2"], ["created_at", "2018-11-27 19:59:57.241834"], ["updated_at", "2018-11-27 19:59:57.241834"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (11.0ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (0.8ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mBid Destroy (0.6ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Knower of Nothing"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Jon"], ["last_name", "Snow"], ["username", "Knower of Nothing"], ["email", "js@winterfell.gov"], ["password_digest", "$2a$10$6YFNVqWAFK5SDQRGzOdIi.eP709hVkSpe1T5XXHnPznWxFtkriG5K"], ["created_at", "2018-11-27 20:00:44.220834"], ["updated_at", "2018-11-27 20:00:44.220834"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mAuction Load (1.0ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions"[0m
+  [1m[36mBid Load (0.8ms)[0m  [1m[34mSELECT "bids".* FROM "bids"[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (27.6ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (1.1ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mBid Destroy (0.9ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Knower of Nothing"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Jon"], ["last_name", "Snow"], ["username", "Knower of Nothing"], ["email", "js@winterfell.gov"], ["password_digest", "$2a$10$w11XMxwHAEwwcT7xmHpI.Oy/Mw.QHgo1fQAN7scStsRAK3yVZAYjy"], ["created_at", "2018-11-27 20:03:17.356118"], ["updated_at", "2018-11-27 20:03:17.356118"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddAuctionToUsers (20181127200636)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (38.7ms)[0m  [1m[35mALTER TABLE "users" ADD "auction_id" bigint[0m
+  ↳ db/migrate/20181127200636_add_auction_to_users.rb:3
+  [1m[35m (27.4ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_auction_id" ON "users"  ("auction_id")[0m
+  ↳ db/migrate/20181127200636_add_auction_to_users.rb:3
+  [1m[35m (71.2ms)[0m  [1m[35mALTER TABLE "users" ADD CONSTRAINT "fk_rails_08a490e1e5"
+FOREIGN KEY ("auction_id")
+  REFERENCES "auctions" ("id")
+[0m
+  ↳ db/migrate/20181127200636_add_auction_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181127200636"]]
+  ↳ bin/rails:9
+  [1m[35m (46.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddBidToUsers (20181127200809)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "bid_id" bigint[0m
+  ↳ db/migrate/20181127200809_add_bid_to_users.rb:3
+  [1m[35m (42.0ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_bid_id" ON "users"  ("bid_id")[0m
+  ↳ db/migrate/20181127200809_add_bid_to_users.rb:3
+  [1m[35m (2.1ms)[0m  [1m[35mALTER TABLE "users" ADD CONSTRAINT "fk_rails_ac1fd0c96a"
+FOREIGN KEY ("bid_id")
+  REFERENCES "bids" ("id")
+[0m
+  ↳ db/migrate/20181127200809_add_bid_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181127200809"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddBidToAuctions (20181127200845)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "auctions" ADD "bid_id" bigint[0m
+  ↳ db/migrate/20181127200845_add_bid_to_auctions.rb:3
+  [1m[35m (40.4ms)[0m  [1m[35mCREATE  INDEX  "index_auctions_on_bid_id" ON "auctions"  ("bid_id")[0m
+  ↳ db/migrate/20181127200845_add_bid_to_auctions.rb:3
+  [1m[35m (2.1ms)[0m  [1m[35mALTER TABLE "auctions" ADD CONSTRAINT "fk_rails_c84c77dafa"
+FOREIGN KEY ("bid_id")
+  REFERENCES "bids" ("id")
+[0m
+  ↳ db/migrate/20181127200845_add_bid_to_auctions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181127200845"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (41.7ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (0.7ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mBid Destroy (0.6ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Knower of Nothing"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Jon"], ["last_name", "Snow"], ["username", "Knower of Nothing"], ["email", "js@winterfell.gov"], ["password_digest", "$2a$10$yI2.PaoFeTWUo/ochwYC.ebBTJJFmWCk8.DB1nUITuCI5JxlTb52."], ["created_at", "2018-11-27 20:09:14.323196"], ["updated_at", "2018-11-27 20:09:14.323196"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddBidToAuctions (20181127200845)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (133.9ms)[0m  [1m[35mALTER TABLE "auctions" DROP CONSTRAINT "fk_rails_c84c77dafa"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "auctions" DROP COLUMN "bid_id"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20181127200845"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddBidToUsers (20181127200809)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[35mALTER TABLE "users" DROP CONSTRAINT "fk_rails_ac1fd0c96a"[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "bid_id"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.9ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20181127200809"]]
+  ↳ bin/rails:9
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddAuctionToUsers (20181127200636)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "users" DROP CONSTRAINT "fk_rails_08a490e1e5"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" DROP COLUMN "auction_id"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20181127200636"]]
+  ↳ bin/rails:9
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddUserRefToAuctions (20181127201430)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "auctions" ADD "user_id" bigint[0m
+  ↳ db/migrate/20181127201430_add_user_ref_to_auctions.rb:3
+  [1m[35m (35.7ms)[0m  [1m[35mCREATE  INDEX  "index_auctions_on_user_id" ON "auctions"  ("user_id")[0m
+  ↳ db/migrate/20181127201430_add_user_ref_to_auctions.rb:3
+  [1m[35m (27.4ms)[0m  [1m[35mALTER TABLE "auctions" ADD CONSTRAINT "fk_rails_a21a834151"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/migrate/20181127201430_add_user_ref_to_auctions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181127201430"]]
+  ↳ bin/rails:9
+  [1m[35m (44.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddUserRefToBids (20181127201827)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "bids" ADD "user_id" bigint[0m
+  ↳ db/migrate/20181127201827_add_user_ref_to_bids.rb:3
+  [1m[35m (41.9ms)[0m  [1m[35mCREATE  INDEX  "index_bids_on_user_id" ON "bids"  ("user_id")[0m
+  ↳ db/migrate/20181127201827_add_user_ref_to_bids.rb:3
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "bids" ADD CONSTRAINT "fk_rails_e173de2ed3"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/migrate/20181127201827_add_user_ref_to_bids.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181127201827"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddAuctionRefToBids (20181127201905)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "bids" ADD "auction_id" bigint[0m
+  ↳ db/migrate/20181127201905_add_auction_ref_to_bids.rb:3
+  [1m[35m (41.4ms)[0m  [1m[35mCREATE  INDEX  "index_bids_on_auction_id" ON "bids"  ("auction_id")[0m
+  ↳ db/migrate/20181127201905_add_auction_ref_to_bids.rb:3
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "bids" ADD CONSTRAINT "fk_rails_7332d1a025"
+FOREIGN KEY ("auction_id")
+  REFERENCES "auctions" ("id")
+[0m
+  ↳ db/migrate/20181127201905_add_auction_ref_to_bids.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181127201905"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (42.7ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (0.5ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mBid Destroy (0.4ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Knower of Nothing"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Jon"], ["last_name", "Snow"], ["username", "Knower of Nothing"], ["email", "js@winterfell.gov"], ["password_digest", "$2a$10$RrQj3HtWLte4J4OhVGo6mODeEkZPk/bNe2MjZNH3rCqC9kUJa7fe2"], ["created_at", "2018-11-27 20:19:29.482588"], ["updated_at", "2018-11-27 20:19:29.482588"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAuction Create (1.3ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "ends_on", "reserve_price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Sample Item"], ["details", "Sample Details"], ["ends_on", "2018-11-27 20:19:29.485178"], ["reserve_price", 100], ["created_at", "2018-11-27 20:19:29.521393"], ["updated_at", "2018-11-27 20:19:29.521393"], ["user_id", 7]]
+  ↳ db/seeds.rb:15
+  [1m[35m (40.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mBid Create (1.5ms)[0m  [1m[32mINSERT INTO "bids" ("price", "created_at", "updated_at", "user_id", "auction_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 11], ["created_at", "2018-11-27 20:19:29.678728"], ["updated_at", "2018-11-27 20:19:29.678728"], ["user_id", 7], ["auction_id", 1]]
+  ↳ db/seeds.rb:23
+  [1m[35m (41.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "auctions"[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "bids"[0m
+  ↳ db/seeds.rb:28
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mAuction Load (2.0ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions"[0m
+  [1m[36mBid Load (1.0ms)[0m  [1m[34mSELECT "bids".* FROM "bids"[0m
+  [1m[36mAuction Load (0.4ms)[0m  [1m[34mSELECT  "auctions".* FROM "auctions" ORDER BY "auctions"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (23.0ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (46.0ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (9.6ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Destroy (9.3ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mBid Destroy (41.2ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (2.4ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mUser Destroy (9.6ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Knower of Nothing"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (5.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Jon"], ["last_name", "Snow"], ["username", "Knower of Nothing"], ["email", "js@winterfell.gov"], ["password_digest", "$2a$10$h4W/nqeuscjdycZHfZk/G.dhIITsXftRaVgP8E0de7fa00m8sTPSq"], ["created_at", "2018-11-27 20:23:52.586444"], ["updated_at", "2018-11-27 20:23:52.586444"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAuction Create (4.3ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "ends_on", "reserve_price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Sample Item"], ["details", "Sample Details"], ["ends_on", "2018-11-27 20:23:52.599294"], ["reserve_price", 100], ["created_at", "2018-11-27 20:23:52.679420"], ["updated_at", "2018-11-27 20:23:52.679420"], ["user_id", 8]]
+  ↳ db/seeds.rb:15
+  [1m[35m (10.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[35m (12.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (7.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mBid Destroy (1.5ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (28.2ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mUser Destroy (42.4ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (22.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Knower of Nothing"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (3.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (3.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Jon"], ["last_name", "Snow"], ["username", "Knower of Nothing"], ["email", "js@winterfell.gov"], ["password_digest", "$2a$10$4Ws5WehOA8UAT4ojfo0JA.jG4104iBj7VO3Ymrx6hqU.YUekp5KDa"], ["created_at", "2018-11-27 20:35:09.819326"], ["updated_at", "2018-11-27 20:35:09.819326"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAuction Create (1.0ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "ends_on", "reserve_price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Sample Item"], ["details", "Sample Details"], ["ends_on", "2018-11-27 20:35:09.831458"], ["reserve_price", 100], ["created_at", "2018-11-27 20:35:09.919747"], ["updated_at", "2018-11-27 20:35:09.919747"], ["user_id", 9]]
+  ↳ db/seeds.rb:15
+  [1m[35m (40.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(8427587142396744315)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mBid Destroy (1.3ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (28.9ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mUser Destroy (41.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Knower of Nothing"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Jon"], ["last_name", "Snow"], ["username", "Knower of Nothing"], ["email", "js@winterfell.gov"], ["password_digest", "$2a$10$CBvwFplEw1GHmwel362ARuaAfgmku1ZQnFzLSk6xSgGMwbAJco22q"], ["created_at", "2018-11-27 20:42:38.491976"], ["updated_at", "2018-11-27 20:42:38.491976"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (40.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAuction Create (1.0ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "ends_on", "reserve_price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Sample Item"], ["details", "Sample Details"], ["ends_on", "2018-11-27 20:42:38.536249"], ["reserve_price", 100], ["created_at", "2018-11-27 20:42:38.577154"], ["updated_at", "2018-11-27 20:42:38.577154"], ["user_id", 10]]
+  ↳ db/seeds.rb:15
+  [1m[35m (42.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 4]]
+  ↳ app/models/bid.rb:9
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mBid Destroy (7.9ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (42.1ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mUser Destroy (41.8ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (1.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Knower of Nothing"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Jon"], ["last_name", "Snow"], ["username", "Knower of Nothing"], ["email", "js@winterfell.gov"], ["password_digest", "$2a$10$2adqMdWcPkrRpAKM7B0abOqPD2wBw7oGnYOD4clKfgadP277qSzoO"], ["created_at", "2018-11-27 20:43:39.143037"], ["updated_at", "2018-11-27 20:43:39.143037"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (41.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAuction Create (0.7ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "ends_on", "reserve_price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Sample Item"], ["details", "Sample Details"], ["ends_on", "2018-11-27 20:43:39.189477"], ["reserve_price", 100], ["created_at", "2018-11-27 20:43:39.240728"], ["updated_at", "2018-11-27 20:43:39.240728"], ["user_id", 11]]
+  ↳ db/seeds.rb:15
+  [1m[35m (40.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 5]]
+  ↳ app/models/bid.rb:8
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mAuction Load (1.6ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions"[0m
+  [1m[36mBid Load (1.0ms)[0m  [1m[34mSELECT "bids".* FROM "bids"[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mBid Destroy (1.3ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (30.9ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mUser Destroy (42.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Knower of Nothing"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Jon"], ["last_name", "Snow"], ["username", "Knower of Nothing"], ["email", "js@winterfell.gov"], ["password_digest", "$2a$10$r26vMxW7Mfs8KepHcnS4k.i6DliNu.LwwSFcrcCKT4CFymRMZZA72"], ["created_at", "2018-11-27 20:46:07.967841"], ["updated_at", "2018-11-27 20:46:07.967841"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (41.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAuction Create (1.3ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "ends_on", "reserve_price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Sample Item"], ["details", "Sample Details"], ["ends_on", "2018-11-27 20:46:08.012174"], ["reserve_price", 100], ["created_at", "2018-11-27 20:46:08.057925"], ["updated_at", "2018-11-27 20:46:08.057925"], ["user_id", 12]]
+  ↳ db/seeds.rb:15
+  [1m[35m (41.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 6]]
+  ↳ app/models/bid.rb:8
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:23
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mAuction Load (1.0ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions"[0m
+  [1m[36mBid Load (1.4ms)[0m  [1m[34mSELECT "bids".* FROM "bids"[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mBid Destroy (2.3ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (41.2ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mUser Destroy (42.2ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Knower of Nothing"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Jon"], ["last_name", "Snow"], ["username", "Knower of Nothing"], ["email", "js@winterfell.gov"], ["password_digest", "$2a$10$soC7zC.3vB8G9gm/EJ3AA.rpnJUe7L7FrJWV69lf/TwqjPORG6NVm"], ["created_at", "2018-11-27 20:49:23.813648"], ["updated_at", "2018-11-27 20:49:23.813648"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (41.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAuction Create (0.8ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "ends_on", "reserve_price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Sample Item"], ["details", "Sample Details"], ["ends_on", "2018-11-27 20:49:23.858644"], ["reserve_price", 100], ["created_at", "2018-11-27 20:49:23.913428"], ["updated_at", "2018-11-27 20:49:23.913428"], ["user_id", 13]]
+  ↳ db/seeds.rb:15
+  [1m[35m (41.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 7]]
+  ↳ app/models/bid.rb:8
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mBid Destroy (1.3ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (41.9ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mUser Destroy (35.9ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Knower of Nothing"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (4.5ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Jon"], ["last_name", "Snow"], ["username", "Knower of Nothing"], ["email", "js@winterfell.gov"], ["password_digest", "$2a$10$JqRF1nkpXoTQVpG2JlZ04OWcTxAiKiDnW8t3r/2zu5vw.Ap3XIXGu"], ["created_at", "2018-11-27 20:49:37.974252"], ["updated_at", "2018-11-27 20:49:37.974252"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (39.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (5.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAuction Create (1.2ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "ends_on", "reserve_price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Sample Item"], ["details", "Sample Details"], ["ends_on", "2018-11-27 20:49:38.020398"], ["reserve_price", 100], ["created_at", "2018-11-27 20:49:38.078609"], ["updated_at", "2018-11-27 20:49:38.078609"], ["user_id", 14]]
+  ↳ db/seeds.rb:15
+  [1m[35m (54.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mBid Load (0.5ms)[0m  [1m[34mSELECT  "bids".* FROM "bids" WHERE "bids"."auction_id" = $1 LIMIT $2[0m  [["auction_id", 8], ["LIMIT", 11]]
+  ↳ app/models/bid.rb:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 8]]
+  ↳ app/models/bid.rb:9
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mBid Destroy (1.1ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (41.9ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mUser Destroy (41.8ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Knower of Nothing"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (8.9ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Jon"], ["last_name", "Snow"], ["username", "Knower of Nothing"], ["email", "js@winterfell.gov"], ["password_digest", "$2a$10$Nd2pArEpx4Xlgw8auHTnCOXyRU5eLteLRXWV27tIHFCdBNmF7dgPm"], ["created_at", "2018-11-27 20:57:40.797240"], ["updated_at", "2018-11-27 20:57:40.797240"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (41.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAuction Create (0.7ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "ends_on", "reserve_price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Sample Item"], ["details", "Sample Details"], ["ends_on", "2018-11-27 20:57:40.853045"], ["reserve_price", 100], ["created_at", "2018-11-27 20:57:40.908790"], ["updated_at", "2018-11-27 20:57:40.908790"], ["user_id", 15]]
+  ↳ db/seeds.rb:15
+  [1m[35m (39.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 9]]
+  ↳ app/models/bid.rb:8
+  [1m[36mBid Load (0.4ms)[0m  [1m[34mSELECT  "bids".* FROM "bids" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ app/models/bid.rb:13
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 9]]
+  ↳ app/models/bid.rb:8
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 9]]
+  ↳ app/models/bid.rb:8
+  [1m[36mBid Create (1.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "created_at", "updated_at", "user_id", "auction_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 110], ["created_at", "2018-11-27 20:58:11.620078"], ["updated_at", "2018-11-27 20:58:11.620078"], ["user_id", 15], ["auction_id", 9]]
+  ↳ db/seeds.rb:23
+  [1m[35m (41.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "auctions"[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "bids"[0m
+  ↳ db/seeds.rb:28
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mAuction Load (0.9ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions"[0m
+  [1m[36mBid Load (1.0ms)[0m  [1m[34mSELECT "bids".* FROM "bids"[0m
+  [1m[36mAuction Load (0.3ms)[0m  [1m[34mSELECT  "auctions".* FROM "auctions" ORDER BY "auctions"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 9]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 9]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 9]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 9]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 9]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 9]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 9]]
+  [1m[36mBid Create (1.3ms)[0m  [1m[32mINSERT INTO "bids" ("price", "created_at", "updated_at", "user_id", "auction_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 120], ["created_at", "2018-11-27 21:03:41.510675"], ["updated_at", "2018-11-27 21:03:41.510675"], ["user_id", 15], ["auction_id", 9]]
+  [1m[35m (32.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBid Load (0.3ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 9]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mAuction Load (0.5ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions"[0m
+  [1m[36mBid Load (0.7ms)[0m  [1m[34mSELECT "bids".* FROM "bids"[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mBid Destroy (42.0ms)[0m  [1m[31mDELETE FROM "bids"[0m
+  ↳ db/seeds.rb:1
+  [1m[36mAuction Destroy (2.0ms)[0m  [1m[31mDELETE FROM "auctions"[0m
+  ↳ db/seeds.rb:2
+  [1m[36mUser Destroy (1.7ms)[0m  [1m[31mDELETE FROM "users"[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (1.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Knower of Nothing"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "js@winterfell.gov"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:7
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Jon"], ["last_name", "Snow"], ["username", "Knower of Nothing"], ["email", "js@winterfell.gov"], ["password_digest", "$2a$10$8qOcWP0LyOQs8ItVuTxMPeqt4IURp1HiOGYIuLx0uypLDphlzMl4m"], ["created_at", "2018-11-27 21:04:41.722088"], ["updated_at", "2018-11-27 21:04:41.722088"]]
+  ↳ db/seeds.rb:7
+  [1m[35m (40.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:7
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mAuction Create (1.2ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "ends_on", "reserve_price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "Sample Item"], ["details", "Sample Details"], ["ends_on", "2018-11-27 21:04:41.766427"], ["reserve_price", 100], ["created_at", "2018-11-27 21:04:41.809142"], ["updated_at", "2018-11-27 21:04:41.809142"], ["user_id", 16]]
+  ↳ db/seeds.rb:15
+  [1m[35m (41.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 10]]
+  ↳ app/models/bid.rb:8
+  [1m[36mBid Create (1.0ms)[0m  [1m[32mINSERT INTO "bids" ("price", "created_at", "updated_at", "user_id", "auction_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 110], ["created_at", "2018-11-27 21:04:41.901886"], ["updated_at", "2018-11-27 21:04:41.901886"], ["user_id", 16], ["auction_id", 10]]
+  ↳ db/seeds.rb:23
+  [1m[35m (40.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "auctions"[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "bids"[0m
+  ↳ db/seeds.rb:28
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mAuction Load (0.7ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions"[0m
+  [1m[36mBid Load (0.8ms)[0m  [1m[34mSELECT "bids".* FROM "bids"[0m
+  [1m[36mUser Load (22.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2018-11-27 14:33:05 -0800
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/user/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as */*
+  Rendering /Users/user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.9ms)
+Completed 200 OK in 174ms (Views: 73.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 14:33:46 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Api::V1::AuctionsController::Auctions):
+  
+app/controllers/api/v1/auctions_controller.rb:15:in `index'
+  [1m[36mAuction Load (0.8ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions"[0m
+Started GET "/api/v1/auctions/10" for 127.0.0.1 at 2018-11-27 14:35:27 -0800
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"10"}
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/api/v1/auctions_controller.rb:27:in `auction'
+app/controllers/api/v1/auctions_controller.rb:11:in `show'
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-11-27 14:36:11 -0800
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/user/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [10 times] (139.5ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (52.0ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (257.7ms)
+Completed 200 OK in 330ms (Views: 277.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 14:36:59 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Api::V1::AuctionsController::Auctions):
+  
+app/controllers/api/v1/auctions_controller.rb:15:in `index'
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 14:37:16 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Api::V1::AuctionsController::Auctions):
+  
+app/controllers/api/v1/auctions_controller.rb:15:in `index'
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 14:46:28 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Api::V1::AuctionsController::Auctions):
+  
+app/controllers/api/v1/auctions_controller.rb:15:in `index'
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 14:51:43 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Api::V1::AuctionsController::Auctions):
+  
+app/controllers/api/v1/auctions_controller.rb:15:in `index'
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 14:51:51 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Api::V1::AuctionsController::Auctions):
+  
+app/controllers/api/v1/auctions_controller.rb:15:in `index'
+  [1m[36mAuction Load (1.1ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions"[0m
+Started GET "/api/v1/auctions/10" for 127.0.0.1 at 2018-11-27 14:52:41 -0800
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"10"}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/api/v1/auctions_controller.rb:27:in `auction'
+app/controllers/api/v1/auctions_controller.rb:11:in `show'
+Started GET "/api/v1/auctions/10" for 127.0.0.1 at 2018-11-27 14:53:47 -0800
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"10"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/api/v1/auctions_controller.rb:27:in `auction'
+app/controllers/api/v1/auctions_controller.rb:11:in `show'
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 14:56:49 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Api::V1::AuctionsController::Auctions):
+  
+app/controllers/api/v1/auctions_controller.rb:15:in `index'
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 14:57:09 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+Completed 400 Bad Request in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: auction):
+  
+app/controllers/api/v1/auctions_controller.rb:31:in `auction_params'
+app/controllers/api/v1/auctions_controller.rb:16:in `index'
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 14:59:38 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+Completed 200 OK in 53ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:00:27 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (43.7ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:16
+Completed 200 OK in 96ms (Views: 36.6ms | ActiveRecord: 55.4ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:01:15 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (0.5ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:16
+Completed 200 OK in 28ms (Views: 18.1ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/api/v1/auctions/10" for 127.0.0.1 at 2018-11-27 15:01:20 -0800
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"10"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/api/v1/auctions_controller.rb:27:in `auction'
+app/controllers/api/v1/auctions_controller.rb:11:in `show'
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:01:26 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (0.5ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:16
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/auctions/10" for 127.0.0.1 at 2018-11-27 15:01:36 -0800
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"10"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/api/v1/auctions_controller.rb:27:in `auction'
+app/controllers/api/v1/auctions_controller.rb:11:in `show'
+Started GET "/api/v1/auctions/10" for 127.0.0.1 at 2018-11-27 15:01:46 -0800
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"10"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/api/v1/auctions_controller.rb:27:in `auction'
+app/controllers/api/v1/auctions_controller.rb:11:in `show'
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-11-27 15:02:25 -0800
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/user/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [10 times] (6.7ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 205ms (Views: 96.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/auctions/10" for 127.0.0.1 at 2018-11-27 15:03:46 -0800
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"10"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/auctions/10" for 127.0.0.1 at 2018-11-27 15:04:18 -0800
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mAuction Load (0.5ms)[0m  [1m[34mSELECT  "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:27
+Completed 200 OK in 60ms (Views: 0.7ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/api/v1/auctions/10" for 127.0.0.1 at 2018-11-27 15:04:24 -0800
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mAuction Load (0.4ms)[0m  [1m[34mSELECT  "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:27
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:09:18 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (0.4ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:16
+Completed 200 OK in 38ms (Views: 13.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/api/v1/auctions/10" for 127.0.0.1 at 2018-11-27 15:09:22 -0800
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"10"}
+  [1m[36mAuction Load (1.4ms)[0m  [1m[34mSELECT  "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:27
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-11-27 15:09:53 -0800
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/user/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [10 times] (4.6ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (81.3ms)
+Completed 200 OK in 130ms (Views: 95.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/auctions?title=item2&details=testing%20item&ends_on=Time.now&reserve_price=200" for 127.0.0.1 at 2018-11-27 15:13:43 -0800
+Processing by Api::V1::AuctionsController#create as JSON
+  Parameters: {"question"=>{"title"=>{" "=>"NOT BLANK TITLE"}, "body"=>"LONG BODY xd"}, "title"=>"item2", "details"=>"testing item", "ends_on"=>"Time.now", "reserve_price"=>"200"}
+Completed 400 Bad Request in 88ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: auction):
+  
+app/controllers/api/v1/auctions_controller.rb:31:in `auction_params'
+app/controllers/api/v1/auctions_controller.rb:3:in `create'
+Started POST "/api/v1/auctions?title=item2&details=testing%20item&ends_on=Time.now&reserve_price=200" for 127.0.0.1 at 2018-11-27 15:14:00 -0800
+Processing by Api::V1::AuctionsController#create as JSON
+  Parameters: {"question"=>{"title"=>{" "=>"NOT BLANK TITLE"}, "body"=>"LONG BODY xd"}, "title"=>"item2", "details"=>"testing item", "ends_on"=>"Time.now", "reserve_price"=>"200"}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: auction):
+  
+app/controllers/api/v1/auctions_controller.rb:31:in `auction_params'
+app/controllers/api/v1/auctions_controller.rb:3:in `create'
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-11-27 15:15:15 -0800
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/user/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [10 times] (6.8ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (59.2ms)
+Completed 200 OK in 110ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/auctions?title=item2&details=testing%20item&ends_on=Time.now&reserve_price=200" for 127.0.0.1 at 2018-11-27 15:15:19 -0800
+Processing by Api::V1::AuctionsController#create as JSON
+  Parameters: {"question"=>{"title"=>{" "=>"NOT BLANK TITLE"}, "body"=>"LONG BODY xd"}, "title"=>"item2", "details"=>"testing item", "ends_on"=>"Time.now", "reserve_price"=>"200"}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: auction):
+  
+app/controllers/api/v1/auctions_controller.rb:31:in `auction_params'
+app/controllers/api/v1/auctions_controller.rb:3:in `create'
+Started POST "/api/v1/auctions?title=item2&details=testing%20item&ends_on=Time.now&reserve_price=200" for 127.0.0.1 at 2018-11-27 15:15:24 -0800
+Processing by Api::V1::AuctionsController#create as JSON
+  Parameters: {"question"=>{"title"=>{" "=>"NOT BLANK TITLE"}, "body"=>"LONG BODY xd"}, "title"=>"item2", "details"=>"testing item", "ends_on"=>"Time.now", "reserve_price"=>"200"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: auction):
+  
+app/controllers/api/v1/auctions_controller.rb:31:in `auction_params'
+app/controllers/api/v1/auctions_controller.rb:3:in `create'
+Started POST "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:20:38 -0800
+Processing by Api::V1::AuctionsController#create as JSON
+  Parameters: {"auction"=>{"title"=>{" "=>"testing item"}, "details"=>"tesing item details", "ends_on"=>"Time.now", "reserve_price"=>"200"}}
+Unpermitted parameter: :title
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 16.3ms)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:5:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/api/v1/auctions_controller.rb:4:in `create'
+Started POST "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:20:50 -0800
+Processing by Api::V1::AuctionsController#create as JSON
+  Parameters: {"auction"=>{"title"=>{" "=>"testing item"}, "details"=>"tesing item details", "ends_on"=>"Time.now", "reserve_price"=>"200"}}
+Unpermitted parameter: :title
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:5:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/api/v1/auctions_controller.rb:4:in `create'
+Started POST "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:22:12 -0800
+Processing by Api::V1::AuctionsController#create as JSON
+  Parameters: {"auction"=>{"title"=>{" "=>"testing item"}, "details"=>"tesing item details", "ends_on"=>"Time.now", "reserve_price"=>"200"}}
+Unpermitted parameter: :title
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:5:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/api/v1/auctions_controller.rb:4:in `create'
+Started POST "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:24:02 -0800
+Processing by Api::V1::AuctionsController#create as JSON
+  Parameters: {"auction"=>{"title"=>{" "=>"1738"}, "details"=>"tesing item details", "ends_on"=>"Time.now", "reserve_price"=>"200"}}
+Unpermitted parameter: :title
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:5:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/api/v1/auctions_controller.rb:4:in `create'
+Started POST "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:26:48 -0800
+Processing by Api::V1::AuctionsController#create as JSON
+  Parameters: {"auction"=>{"title"=>{" "=>"1738"}, "details"=>"tesing item details", "ends_on"=>"Time.now", "reserve_price"=>"200"}}
+Unpermitted parameter: :title
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:5:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/api/v1/auctions_controller.rb:4:in `create'
+Started POST "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:27:50 -0800
+Processing by Api::V1::AuctionsController#create as JSON
+  Parameters: {"auction"=>{"title"=>{" "=>"1738"}, "details"=>"tesing item details", "ends_on"=>"Time.now", "reserve_price"=>"200"}}
+Unpermitted parameter: :title
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:5:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/api/v1/auctions_controller.rb:4:in `create'
+Started POST "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:29:52 -0800
+Processing by Api::V1::AuctionsController#create as JSON
+  Parameters: {"auction"=>{"title"=>"1738", "details"=>"tesing item details", "ends_on"=>"Time.now", "reserve_price"=>"200"}}
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 6.4ms)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:5:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/api/v1/auctions_controller.rb:4:in `create'
+Started POST "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:30:13 -0800
+Processing by Api::V1::AuctionsController#create as JSON
+  Parameters: {"auction"=>{"title"=>"1738", "details"=>"tesing item details", "ends_on"=>"Time.now", "reserve_price"=>"200"}}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+LoadError (cannot load such file -- bcrypt):
+  
+app/models/user.rb:5:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/api/v1/auctions_controller.rb:4:in `create'
+Started POST "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:33:17 -0800
+  [1m[35m (25.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/user/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::AuctionsController#create as JSON
+  Parameters: {"auction"=>{"title"=>"1738", "details"=>"tesing item details", "ends_on"=>"Time.now", "reserve_price"=>"200"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:4
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:6
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:6
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (182.84ms)
+Completed 200 OK in 417ms (Views: 252.1ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:34:08 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (2.8ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:16
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:16
+[active_model_serializers]   [1m[36mBid Load (41.4ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:16
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (113.7ms)
+Completed 200 OK in 122ms (Views: 73.4ms | ActiveRecord: 46.6ms)
+
+
+Started POST "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:35:28 -0800
+Processing by Api::V1::AuctionsController#create as JSON
+  Parameters: {"auction"=>{"title"=>"1738", "details"=>"tesing item details", "ends_on"=>"Time.now", "reserve_price"=>"200"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:4
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:6
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (39.96ms)
+Completed 200 OK in 88ms (Views: 36.1ms | ActiveRecord: 19.1ms)
+
+
+Started POST "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:36:37 -0800
+Processing by Api::V1::AuctionsController#create as JSON
+  Parameters: {"auction"=>{"title"=>"1738", "details"=>"tesing item details", "ends_on"=>"2020-02-02 01:00:00 PST ", "reserve_price"=>"200"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:6
+  [1m[36mAuction Create (14.2ms)[0m  [1m[32mINSERT INTO "auctions" ("title", "details", "ends_on", "reserve_price", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "1738"], ["details", "tesing item details"], ["ends_on", "2020-02-02 09:00:00"], ["reserve_price", 200], ["created_at", "2018-11-27 23:36:37.177853"], ["updated_at", "2018-11-27 23:36:37.177853"], ["user_id", 16]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:6
+  [1m[35m (21.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:6
+[active_model_serializers]   [1m[36mBid Load (0.6ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:7
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (4.97ms)
+Completed 200 OK in 51ms (Views: 5.7ms | ActiveRecord: 37.2ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:36:46 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (1.2ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:17
+[active_model_serializers]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:17
+[active_model_serializers]   [1m[36mBid Load (0.7ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:17
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:17
+[active_model_serializers]   [1m[36mBid Load (0.5ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:17
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (92.53ms)
+Completed 200 OK in 97ms (Views: 92.9ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/api/v1/bids" for 127.0.0.1 at 2018-11-27 15:49:03 -0800
+Processing by Api::V1::BidsController#create as JSON
+  Parameters: {"bid"=>{"price"=>"250"}}
+Completed 404 Not Found in 38ms (ActiveRecord: 8.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Auction without an ID):
+  
+app/controllers/api/v1/bids_controller.rb:3:in `create'
+Started POST "/api/v1/bids" for 127.0.0.1 at 2018-11-27 15:49:34 -0800
+Processing by Api::V1::BidsController#create as JSON
+  Parameters: {"bid"=>{"price"=>"250"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActionController::Parameters (0.14ms)
+Completed 200 OK in 28ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:50:46 -0800
+Processing by Api::V1::AuctionsController#create as JSON
+  Parameters: {"bid"=>{"price"=>"250"}}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: auction):
+  
+app/controllers/api/v1/auctions_controller.rb:31:in `auction_params'
+app/controllers/api/v1/auctions_controller.rb:3:in `create'
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 15:50:52 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (1.8ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:16
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:16
+[active_model_serializers]   [1m[36mBid Load (0.7ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:16
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:16
+[active_model_serializers]   [1m[36mBid Load (0.4ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:16
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (117.05ms)
+Completed 200 OK in 191ms (Views: 144.8ms | ActiveRecord: 45.4ms)
+
+
+Started GET "/api/v1/auctions/11" for 127.0.0.1 at 2018-11-27 15:51:00 -0800
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"11"}
+  [1m[36mAuction Load (2.8ms)[0m  [1m[34mSELECT  "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:27
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:11
+[active_model_serializers]   [1m[36mBid Load (0.8ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:11
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (6.14ms)
+Completed 200 OK in 18ms (Views: 5.7ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/api/v1/bids" for 127.0.0.1 at 2018-11-27 15:51:41 -0800
+Processing by Api::V1::BidsController#create as JSON
+  Parameters: {"bid"=>{"price"=>"250"}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with ActionController::Parameters (0.24ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-11-27 15:55:49 -0800
+  [1m[35m (23.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/user/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/user/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [10 times] (4.5ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (44.8ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (91.0ms)
+Completed 200 OK in 155ms (Views: 137.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2018-11-27 15:57:34 -0800
+Processing by Rails::InfoController#routes as HTML
+  Rendering /Users/user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /Users/user/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [10 times] (5.1ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.5.1/gems/actionpack-5.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendered /Users/user/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (50.2ms)
+Completed 200 OK in 92ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/auctions/11" for 127.0.0.1 at 2018-11-27 15:58:24 -0800
+Processing by Api::V1::AuctionsController#show as JSON
+  Parameters: {"id"=>"11"}
+  [1m[36mAuction Load (0.8ms)[0m  [1m[34mSELECT  "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:27
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:11
+[active_model_serializers]   [1m[36mBid Load (0.7ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:11
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (199.21ms)
+Completed 200 OK in 350ms (Views: 228.7ms | ActiveRecord: 18.6ms)
+
+
+Started POST "/api/v1/auctions/11/bids" for 127.0.0.1 at 2018-11-27 15:58:54 -0800
+Processing by Api::V1::BidsController#create as JSON
+  Parameters: {"bid"=>{"price"=>"250"}, "auction_id"=>"11"}
+  [1m[36mAuction Load (0.4ms)[0m  [1m[34mSELECT  "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/bids_controller.rb:3
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/api/v1/bids_controller.rb:7
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/bids_controller.rb:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT MAX("bids"."price") FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+  ↳ app/models/bid.rb:8
+  [1m[36mBid Create (23.4ms)[0m  [1m[32mINSERT INTO "bids" ("price", "created_at", "updated_at", "user_id", "auction_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["price", 250], ["created_at", "2018-11-27 23:58:54.560276"], ["updated_at", "2018-11-27 23:58:54.560276"], ["user_id", 16], ["auction_id", 11]]
+  ↳ app/controllers/api/v1/bids_controller.rb:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/bids_controller.rb:9
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/bids_controller.rb:10
+[active_model_serializers]   [1m[36mBid Load (0.5ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/bids_controller.rb:10
+[active_model_serializers] Rendered AuctionSerializer with ActiveModelSerializers::Adapter::Attributes (52.17ms)
+Completed 200 OK in 205ms (Views: 67.0ms | ActiveRecord: 40.8ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 16:01:22 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (1.5ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:15
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:15
+[active_model_serializers]   [1m[36mBid Load (0.4ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:15
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:15
+[active_model_serializers]   [1m[36mBid Load (0.4ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:15
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (79.03ms)
+Completed 200 OK in 102ms (Views: 84.0ms | ActiveRecord: 13.8ms)
+
+
+Started POST "/api/v1/auctions/11" for 127.0.0.1 at 2018-11-27 16:01:29 -0800
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/auctions/11"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started DELETE "/api/v1/auctions/11" for 127.0.0.1 at 2018-11-27 16:01:38 -0800
+Processing by Api::V1::AuctionsController#destroy as JSON
+  Parameters: {"bid"=>{"price"=>"250"}, "id"=>"11"}
+  [1m[36mAuction Load (1.5ms)[0m  [1m[34mSELECT  "auctions".* FROM "auctions" WHERE "auctions"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:26
+  [1m[35m (4.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:19
+  [1m[36mBid Load (1.3ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 11]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:19
+  [1m[36mBid Destroy (0.7ms)[0m  [1m[31mDELETE FROM "bids" WHERE "bids"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:19
+  [1m[36mAuction Destroy (4.6ms)[0m  [1m[31mDELETE FROM "auctions" WHERE "auctions"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/api/v1/auctions_controller.rb:19
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:19
+  [1m[36mAuction Load (1.1ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:20
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:20
+[active_model_serializers]   [1m[36mBid Load (0.6ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:20
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.84ms)
+Completed 200 OK in 36ms (Views: 7.9ms | ActiveRecord: 19.1ms)
+
+
+Started GET "/api/v1/auctions" for 127.0.0.1 at 2018-11-27 16:01:45 -0800
+Processing by Api::V1::AuctionsController#index as JSON
+  [1m[36mAuction Load (1.2ms)[0m  [1m[34mSELECT "auctions".* FROM "auctions" ORDER BY "auctions"."created_at" DESC[0m
+  ↳ app/controllers/api/v1/auctions_controller.rb:15
+[active_model_serializers]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:15
+[active_model_serializers]   [1m[36mBid Load (0.4ms)[0m  [1m[34mSELECT "bids".* FROM "bids" WHERE "bids"."auction_id" = $1[0m  [["auction_id", 10]]
+[active_model_serializers]   ↳ app/controllers/api/v1/auctions_controller.rb:15
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (7.45ms)
+Completed 200 OK in 11ms (Views: 8.4ms | ActiveRecord: 2.1ms)
+
+
