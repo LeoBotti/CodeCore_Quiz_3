@@ -1,7 +1,10 @@
 class Api::V1::AuctionsController < Api::ApplicationController
+  before_action :authenticate_user!, only: [ :create, :destroy ]
+  before_action :authorize_user!, only: [ :destroy ]
+  
   def create
     auction = Auction.new auction_params
-    auction.user = User.last # current_user
+    auction.user = current_user
     
     auction.save
     render json: auction
@@ -32,5 +35,11 @@ class Api::V1::AuctionsController < Api::ApplicationController
 
   def auction_params
     params.require(:auction).permit(:title, :details, :ends_on, :reserve_price)
+  end
+
+  def authorize_user!
+    unless can? :crud, auction
+      render(json: { errors: ["Unauthorized"] }, status: 401)
+    end
   end
 end
